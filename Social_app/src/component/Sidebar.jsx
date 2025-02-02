@@ -1,5 +1,5 @@
 
-export default function Sidebar() {
+export default function Sidebar(props) {
   return (
     <>
       <div className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark  sidebar" style={{width: "280px"}}>

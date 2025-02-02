@@ -22,3 +22,9 @@
   left: 0px;
   z-index: 9px;
 }
+.navgat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
