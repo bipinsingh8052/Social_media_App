@@ -6,7 +6,7 @@ export default function Navbardata(props) {
     <>
  <nav className="navbar navbar-expand-lg bg-dark text-bg-white" data-bs-theme="dark">
   <div className="container navgat">
-    <a className="navbar-brand border p-2 rounded" href="#">Social_media</a>
+    <Link className="navbar-brand border p-2 rounded" href="#">Social_media</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -20,20 +20,20 @@ export default function Navbardata(props) {
           {/* <Link to={} className="nav-link active" aria-current="page" href="#">Home</Link> */}
         </li>
         <li className="nav-item">
-          <Link to={props.pathi} className="nav-link active">Post</Link>
+          <Link to={props.sendpost} className="nav-link active">Post</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link active " href="#">Create Post</a>
+          <Link className="nav-link active " to={props.sendcreate}>Create Post</Link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
-          </a>
+          </Link>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><Link className="dropdown-item" href="#">Action</Link></li>
+            <li><Link className="dropdown-item" href="#">Another action</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item" href="#">Something else here</Link></li>
           </ul>
         </li>
       </ul>

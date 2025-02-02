@@ -9,8 +9,9 @@ export default function Layout() {
     // let [Create,set_create]=useState("");
   return (
     <div>
-        <Link to="home">Home</Link>
-        <Link to="createpost">createpost</Link>
+
+      <Navbardata sendpost="/post" sendcreate="/createpost"  />
+
         <main>
 
 

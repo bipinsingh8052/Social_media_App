@@ -10,19 +10,21 @@ import All_Carts from "./component/All_Carts";
 import {BrowserRouter, Outlet, Route, Routes} from 'react-router-dom'
 import Layout from "./Layout";
 function App() {
-  let [navbar,setNavbar]=useState("");
+
 
 
   return (
     <>
         <BrowserRouter>
         <Routes>
-          <Route>
-            <Route path="/" element={<Layout/>} />
-            <Route index element={<All_Carts/>}/>
-            <Route path="post" element={<All_Carts/>}/>
+           <Route path="/" element={<Layout/>}>
+              <Route index element={<All_Carts/>}/>
+              <Route path="post" element={<All_Carts/>}/>
+              <Route path="createpost" element={<CreatePost/>}/>
 
-          </Route>
+              <Route path="*" element={<Footer/>} />
+
+           </Route>
         </Routes>
         </BrowserRouter>
     {/* <div className="app_container">
